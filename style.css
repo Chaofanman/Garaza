@@ -1,0 +1,9 @@
+
+body{
+   background-image: url("img/bg.png")
+}
+
+.justify  {
+    text-align: justify;
+    text-justify: inter-word;
+}

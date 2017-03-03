@@ -89,12 +89,26 @@
     	<p>In the second week, our client finalized our mockups. A lot of time was spent modularizing the database, tables, and their associations. We also rewrote our sign up via email and login to match the individual consultant fields; passwords were still hashed using an MD5 hashing function. We also moved to a postgres database for future proofing. </p>
     	<p><strong>Third Week</strong></p>
     	<p>For the third week we focused on finishing all front end elements. This is the biggest part of the first module and we plan on finishing this the next few weeks. Most of our groups efforts would be directed here for now.</p>
+    	<p><strong>Fourth Week</strong></p>
+    	<p>After some talks with out client, we both agreed that switching our views from javascript to xml would be the best move going forward. Most exampled on the sapui5.explored website were in xml and it was difficult having to translate that code into js. Since we are now using xml as well it would be easier for us to follow the examples since translation is no longer required. However we had to redo all of our current views which would set us back a little.</p>
+    	<p><strong>Fifth Week</strong></p>
+    	<p>We're now about halfway done with all of the front end views we need to do. We have started to work on connecting the database with our frontend since we have currently just been using locally stored data. Along with this, we will start working on user authentication, giving different accounts different restrictions on what they can or cannot do.</p>
 	</div>
 
 	<div class="container center">
 		<h4>Test Cases</h4>
 		<p>Currently we have been testing the login system back end by inputting invalid and valid inputs and checking if they would output the desired results. We will also begin to test the sql injection counter-measures we have in place. </p>
 		<p>We have been testing page navigation as well making sure we are being taken to the right pages.</p>
+		<p>Ex. Input: Admin, AdminPassword<br />
+		Expected Output: Succesful Login, redirected to account page<br />
+		Actual Output: Succesful Login, redirected to account page<br />
+		Input: FakeAccount, FakePassword<br />
+		Expected Output: Failed Login, redirected to login page<br />
+		Actual Output: Failed Login, redirected to login page<br />
+		Input: F@44#__-=+, FakePassword<br />
+		Expected Output: Failed Login(invalid characters), redirected to login page<br />
+		Actual Output: Failed Login(invalid characters), redirected to login page<br /></p>
+	</div></p>
 	</div>
 
     <div style="padding-bottom:50px;"></div>

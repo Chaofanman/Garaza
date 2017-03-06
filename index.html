@@ -91,14 +91,31 @@
     	<p>For the third week we focused on finishing all front end elements. This is the biggest part of the first module and we plan on finishing this the next few weeks. Most of our groups efforts would be directed here for now.</p>
     	<p><strong>Fourth Week</strong></p>
     	<p>We have made good progress in the the front end pages. Some of them are completed while others have the barebones markup. We've had trouble sending the different kinds of requests to the server since OpenUI5 handles data binding differently. This week we will focus on the requests to the back end server and connecting it to the front end fields to make the page more dynamic. Refactoring of the back end is needed since the page to edit and sign up will be one big page so the data should be sent as a single request as opposed to separate ones.</p>
+    	<p>After some talks with out client, we both agreed that switching our views from javascript to xml would be the best move going forward. Most exampled on the sapui5.explored website were in xml and it was difficult having to translate that code into js. Since we are now using xml as well it would be easier for us to follow the examples since translation is no longer required. However we had to redo all of our current views which would set us back a little.</p>
+    	<p><strong>Fifth Week</strong></p>
+    	<p>We're now about halfway done with all of the front end views we need to do. We have started to work on connecting the database with our frontend since we have currently just been using locally stored data. Along with this, we will start working on user authentication, giving different accounts different restrictions on what they can or cannot do.</p>
 	</div>
 
 	<div class="container center">
 		<h4>Test Cases</h4>
 		<p>Currently we have been testing the login system back end by inputting invalid and valid inputs and checking if they would output the desired results. We will also begin to test the sql injection counter-measures we have in place. </p>
 		<p>We have been testing page navigation as well making sure we are being taken to the right pages.</p>
+		<p>Ex. Input: Admin, AdminPassword<br />
+		Expected Output: Succesful Login, redirected to account page<br />
+		Actual Output: Succesful Login, redirected to account page<br />
+		Input: FakeAccount, FakePassword<br />
+		Expected Output: Failed Login, redirected to login page<br />
+		Actual Output: Failed Login, redirected to login page<br />
+		Input: F@44#__-=+, **43@@-1<br />
+		Expected Output: Failed Login(invalid characters), redirected to login page<br />
+		Actual Output: Failed Login(invalid characters), redirected to login page<br /></p>
+	</div></p>
 	</div>
 
+
+	<div class="container center">
+    	<h4><a href="https://drive.google.com/file/d/0BzIUKyHcvWZ-NWJFVWM2SVFVUFE/view?usp=sharing">Alpha Test</a></h4>
+    </div>
 
     <div style="padding-bottom:50px;"></div>
 </body>
